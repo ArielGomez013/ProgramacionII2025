@@ -3,37 +3,27 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package tp6;
-
+import java.time.LocalDate;
 /**
  *
  * @author ariel
  */
+
 public class Documentar extends Tarea {
-    private int fechaActual;
-    public Documentar(String nombre, int fechaDeInicio, int fechaDeFin, String responsable, int fechaActual) {
-        super(nombre, fechaDeInicio, fechaDeFin, responsable);
-        this.fechaActual=fechaActual;
+    private LocalDate fechaDeFin;
+    public Documentar(String nombre, LocalDate fechaDeInicio, String responsable) {
+        super(nombre, fechaDeInicio, responsable);
     }
 
     @Override
-    public void informe() {
-        int diasEnElProyecto;
-        int diasTranscurridos;
-        int progreso;
-        double progresoFinal;
-        
-        diasEnElProyecto= fechaDeFin-fechaDeInicio;
-        diasTranscurridos=fechaActual-fechaDeInicio;
-        progreso= diasEnElProyecto*24;
-        progresoFinal=((double)diasTranscurridos/diasEnElProyecto)*100;
-                
-        System.out.println("Tarea: " + nombre);
-        System.out.println("Responsable: " + responsable);
-        System.out.println("Fecha de inicio: "+ fechaDeInicio +" de Febrero");
-        System.out.println("Fecha de fin: "+fechaDeFin+" de Febrero");
-        System.out.println("Fecha actual: "+fechaActual +" de Febrero");
-        System.out.println("Tiempo total invertido: " + progreso + " horas");
-        System.out.println("Progreso total: "+String.format("%.2f", progresoFinal)+"%");
+    public void calcularTiempo() {
+        int paginas=7;
+        fechaDeFin= LocalDate.of(2025,4,30);
+        System.out.println("Fecha de Fin: "+fechaDeFin);
+        System.out.println(responsable+" realiza 7 paginas por dia (7 horas por dia) ");
+        int tiempoTotal=paginas*7;  
+        System.out.println("Tiempo total invertido en la tarea: "+tiempoTotal+" horas");
     }
+
     
 }

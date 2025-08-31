@@ -8,7 +8,7 @@ package tp6;
  *
  * @author ariel
  */
-public class Ropa extends Producto implements Talle {
+public class Ropa extends Producto {
     private char talle;
 
     public Ropa(char talle, String nombre, double precio, String caracteristica) {
@@ -23,9 +23,6 @@ public class Ropa extends Producto implements Talle {
     }
     
 
-    @Override
-    public char calcularTalle() {
-        return talle;
-    }
+    
     
 }

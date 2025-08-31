@@ -8,7 +8,7 @@ package tp6;
  *
  * @author ariel
  */
-public class Alimenticio extends Producto implements Vencimiento {
+public class Alimenticio extends Producto{
     private int fechaActual;
     private int vencimiento;
 
@@ -20,12 +20,11 @@ public class Alimenticio extends Producto implements Vencimiento {
 
     @Override
     public String mostrarDetalle() {
-        return "Producto: "+this.nombre+"\nPrecio: "+this.precio+"$"+"\nCaracteristica: "+this.caracteristica;
+        return "Producto: "+this.nombre+"\nPrecio: "+this.precio+"$"+"\nCaracteristica: "+this.caracteristica+"\n"+calcularVencimiento();
     }
   
     
 
-    @Override
     public String calcularVencimiento() {
         int producto;
         producto=vencimiento-fechaActual;

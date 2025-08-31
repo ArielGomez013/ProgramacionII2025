@@ -3,42 +3,32 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package tp6;
-
+import java.time.LocalDate;
 /**
  *
  * @author ariel
  */
 public class Programar extends Tarea{
-    private int fechaActual;
+    private LocalDate fechaDeFin;
+
+    public Programar(String nombre, LocalDate fechaDeInicio, String responsable) {
+        super(nombre, fechaDeInicio, responsable);
+    }
     
-    public Programar(String nombre, int fechaDeInicio, int fechaDeFin, String responsable, int fechaActual) {
-        super(nombre, fechaDeInicio, fechaDeFin, responsable);
-        this.fechaActual=fechaActual;
+    
+
+    @Override
+    public void calcularTiempo() {
+        int dia=30;
+        fechaDeFin= LocalDate.of(2025,04,05);
+        System.out.println("Fecha de Fin: "+fechaDeFin);
+        System.out.println(responsable+" realiza 100 lineas de codigo por dia (6 horas cada dia) ");
+        int tiempoTotal=(dia*6); 
+        System.out.println("Tiempo total invertido en la tarea: "+tiempoTotal+" horas");
     }
 
     
     
     
-    @Override
-    public void informe() {
-        int diasEnElProyecto;
-        int diasTranscurridos;
-        int progreso;
-        double progresoFinal;
-        
-        diasEnElProyecto= fechaDeFin-fechaDeInicio;
-        diasTranscurridos=fechaActual-fechaDeInicio;
-        progreso= diasEnElProyecto*24;
-        progresoFinal=((double)diasTranscurridos/diasEnElProyecto)*100;
-                
-        System.out.println("Tarea: " + nombre);
-        System.out.println("Responsable: " + responsable);
-        System.out.println("Fecha de inicio: 8 de Marzo");
-        System.out.println("Fecha de fin: 10 de Abril");
-        System.out.println("Fecha actual: 30 de marzo");
-        System.out.println("Tiempo total invertido: " + progreso + " horas");
-        System.out.println("Progreso total: "+String.format("%.2f", progresoFinal)+"%");
-        
-    }
     
 }

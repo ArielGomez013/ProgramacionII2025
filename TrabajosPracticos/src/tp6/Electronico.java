@@ -8,7 +8,7 @@ package tp6;
  *
  * @author ariel
  */
-public class Electronico extends Producto implements Garantia {
+public class Electronico extends Producto{
     private int mes;
 
     public Electronico(int mes, String nombre, double precio, String caracteristica) {
@@ -22,9 +22,6 @@ public class Electronico extends Producto implements Garantia {
         return "Producto: "+this.nombre+"\nPrecio: "+this.precio+"$"+"\nCaracteristica: "+this.caracteristica+"\nGarantia: "+mes+" meses";
     }
 
-    @Override
-    public int calcularGarantia() {
-        return mes;
-    }
+    
     
 }
