@@ -27,11 +27,6 @@ public abstract class Tarea {
         System.out.println("Tarea: " + nombre);
         System.out.println("Responsable: " + responsable);
         System.out.println("Fecha de inicio: " + fechaDeInicio);
-    //    System.out.println("Fecha de fin: " + fechaDeFin+ " de Septiembre");
-    //    System.out.println("Fecha actual: "+ fechaActual+ " de Septiembre");
-    //    System.out.println("Tiempo total invertido: " + progreso + " horas");
-    //    System.out.println("Progreso total: "+String.format("%.2f", progresoFinal)+"%");
-        
-       
+    
     }
 }
