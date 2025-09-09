@@ -8,9 +8,9 @@ package tp7;
  *
  * @author ariel
  */
-public class CineException extends Exception{
+public class AsientoException extends RuntimeException {
 
-    public CineException(String message) {
+    public AsientoException(String message) {
         super(message);
     }
     
