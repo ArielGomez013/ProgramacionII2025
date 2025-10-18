@@ -1,0 +1,33 @@
+[ {
+  "Nombre" : "Argentina",
+  "Provincia" : [ {
+    "Nombre" : "Tucuman",
+    "Gobernador" : "Osvaldo Jaldo"
+  }, {
+    "Nombre" : "Buenos Aires",
+    "Gobernador" : "Pedro de la Vega"
+  } ],
+  "Ciudad" : [ {
+    "Nombre" : "Concepcion",
+    "Habitantes" : 30000
+  }, {
+    "Nombre" : "Veronica",
+    "Habitantes" : 10000
+  } ]
+}, {
+  "Nombre" : "España",
+  "Provincia" : [ {
+    "Nombre" : "Catalunia",
+    "Gobernador" : "Leonel Messi"
+  }, {
+    "Nombre" : "Madrid",
+    "Gobernador" : "Cristiano Ronaldo"
+  } ],
+  "Ciudad" : [ {
+    "Nombre" : "Barcelona",
+    "Habitantes" : 150000
+  }, {
+    "Nombre" : "Madrid",
+    "Habitantes" : 200000
+  } ]
+} ]

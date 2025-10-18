@@ -1,0 +1,17 @@
+{
+  "nombre" : "UNSTA",
+  "localidad" : "Concepcion",
+  "alumnos" : [ {
+    "nombre" : "Esteban",
+    "id" : 1234,
+    "localidad" : "Concepcion"
+  }, {
+    "nombre" : "Valeria",
+    "id" : 1235,
+    "localidad" : "Monteros"
+  }, {
+    "nombre" : "Ana",
+    "id" : 1236,
+    "localidad" : "Famailla"
+  } ]
+}

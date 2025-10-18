@@ -1,0 +1,36 @@
+{
+  "nombre" : "Jira",
+  "sprints" : [ {
+    "f_deInicio" : 1,
+    "f_deFin" : 8
+  }, {
+    "f_deInicio" : 8,
+    "f_deFin" : 15
+  } ],
+  "desarrolladores" : [ {
+    "nombre" : "Pablo"
+  }, {
+    "nombre" : "Miguel"
+  } ],
+  "sprintDesarrolladores" : [ {
+    "sprint" : {
+      "f_deInicio" : 1,
+      "f_deFin" : 8
+    },
+    "tarea" : "API",
+    "rol" : "Backend",
+    "desarrollador" : {
+      "nombre" : "Pablo"
+    }
+  }, {
+    "sprint" : {
+      "f_deInicio" : 8,
+      "f_deFin" : 15
+    },
+    "tarea" : "Disenio Digital",
+    "rol" : "Frontend",
+    "desarrollador" : {
+      "nombre" : "Miguel"
+    }
+  } ]
+}
